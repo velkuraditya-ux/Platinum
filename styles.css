@@ -285,6 +285,31 @@ nav.primary a:hover::after { right: 0; }
 .scroll-cue .dot { width: 1px; height: 34px; background: linear-gradient(var(--gold-light), transparent); animation: scrollcue 1.8s ease-in-out infinite; }
 @keyframes scrollcue { 0%,100% { opacity: 0.3; } 50% { opacity: 1; } }
 
+/* ---------- Interior page hero (Services / Why Us / Gallery / Contact) ---------- */
+.page-hero {
+  position: relative;
+  min-height: 46vh;
+  display: flex;
+  align-items: flex-end;
+  color: #fff;
+  overflow: hidden;
+}
+.page-hero .hero-media::after {
+  background: linear-gradient(180deg, rgba(10,9,6,0.6) 0%, rgba(10,9,6,0.55) 40%, rgba(10,9,6,0.92) 100%);
+}
+.page-hero-content { position: relative; z-index: 1; padding: 150px 0 56px; max-width: 720px; }
+.page-hero-content h1 { color: #fff; font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 14px; }
+.page-hero-content p { color: var(--on-dark-soft); font-size: 1.05rem; max-width: 560px; margin: 0; }
+.breadcrumb { display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: var(--on-dark-soft); margin-top: 18px; }
+.breadcrumb a { color: var(--on-dark-soft); transition: color var(--dur) var(--ease); }
+.breadcrumb a:hover { color: var(--gold-light); }
+.breadcrumb span { color: var(--gold-light); }
+
+/* ---------- Nav active state ---------- */
+nav.primary a.active, .mobile-nav a.active { color: var(--ink); font-weight: 600; }
+nav.primary a.active::after { right: 0; }
+.mobile-nav a.active { color: var(--gold-deep); }
+
 /* ---------- Marquee / services strip ---------- */
 .strip {
   background: var(--ink);
