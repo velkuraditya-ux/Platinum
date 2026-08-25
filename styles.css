@@ -1,6 +1,6 @@
 /* ===================================================================
    Platinum Contractors Corp — stylesheet
-   Design system: near-black + gold, Playfair Display / Inter
+   Design system: near-black + platinum, Playfair Display / Inter
 =================================================================== */
 
 :root {
@@ -9,10 +9,10 @@
   --paper: #ffffff;
   --paper-alt: #f6f3ee;
   --line: #e6e0d6;
-  --gold: #a8781f;
-  --gold-deep: #8a6210;
-  --gold-light: #d8b567;
-  --gold-grad: linear-gradient(135deg, #e7c988 0%, #a8781f 55%, #7a5713 100%);
+  --gold: #9aa0a6;
+  --gold-deep: #5b5f66;
+  --gold-light: #d6d8da;
+  --gold-grad: linear-gradient(135deg, #f5f6f7 0%, #c7cbcf 50%, #9aa0a6 100%);
   --dark: #14110d;
   --dark-alt: #1d1811;
   --on-dark: #f3ece0;
@@ -112,7 +112,7 @@ section { position: relative; }
 .btn svg { width: 18px; height: 18px; flex: none; }
 .btn-gold {
   background: var(--gold-grad);
-  color: #221803;
+  color: var(--ink);
   box-shadow: var(--shadow-sm);
 }
 .btn-gold:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
