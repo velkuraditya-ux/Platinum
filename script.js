@@ -89,7 +89,7 @@
         "Message:\n" + message;
 
       var mailto =
-        "mailto:info@platinumcontractorscorp.com" +
+        "mailto:office@platinumnow.net" +
         "?subject=" + encodeURIComponent(subject) +
         "&body=" + encodeURIComponent(body);
 
